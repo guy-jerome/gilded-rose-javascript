@@ -1,5 +1,5 @@
 import { expect, describe, it } from "vitest";
-import { Item, ConjuredItem, items, updateQuality } from "./gilded-rose.js";
+import { Item, ConjuredItem, Cheese, LegendaryItem, Pass, BasicItem, items, updateQuality } from "./gilded-rose.js";
 
 
 //Generic Test
@@ -9,8 +9,8 @@ function testUpdateQuality(ClassName, initialSellIn, initialQuality, expectedSel
 
   updateQuality()
 
-  expect(textItem.sellIn).toBe(expectedSellIn)
-  expect(textItem.quality).toBe(expectedQuality)
+  expect(testItem.sellIn).toBe(expectedSellIn)
+  expect(testItem.quality).toBe(expectedQuality)
 }
 
 
