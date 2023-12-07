@@ -6,14 +6,53 @@ export class Item {
   }
 }
 
+export class ConjuredItem extends Item {
+  constructor(name,sellIn,quality) {
+    super(name, sellIn, quality)
+  }
+}
+
+export class LegendaryItem extends Item {
+  constructor(name,sellIn,quality) {
+    super(name, sellIn, quality)
+  }
+}
+
+export class BasicItem extends Item {
+  constructor(name,sellIn,quality) {
+    super(name, sellIn, quality)
+  }
+}
+
+export class Cheese extends Item {
+  constructor(name,sellIn,quality) {
+    super(name, sellIn, quality)
+  }
+}
+
+export class Pass extends Item {
+  constructor(name,sellIn,quality) {
+    super(name, sellIn, quality)
+  }
+}
+
+
+
+//Sub classes
+//Basic item
+//Cheese
+//Legendary item
+//Back Stage Pass
+//Conjured Item
+
 export let items = [];
 
 items.push(new Item("+5 Dexterity Vest", 10, 20));
-items.push(new Item("Aged Brie", 2, 0));
+items.push(new Chee("Aged Brie", 2, 0));
 items.push(new Item("Elixir of the Mongoose", 5, 7));
-items.push(new Item("Sulfuras, Hand of Ragnaros", 0, 80));
+items.push(new LegendaryItem("Sulfuras, Hand of Ragnaros", 0, 80));
 items.push(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
-items.push(new Item("Conjured Mana Cake", 3, 6));
+items.push(new ConjuredItem("Conjured Mana Cake", 3, 6));
 
 export const updateQuality = () => {
   for (let item of items) {
